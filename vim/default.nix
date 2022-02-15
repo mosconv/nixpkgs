@@ -8,7 +8,6 @@ vim.mkDerivation {
     owner = "mosconv";
     repo = "vim";
     rev = "${version};
-    sha256 = "sha256:1jw51h9ic9y6m78qlbhwznv14dd4v8gx1f9pv6gvy57hva6xjh81";
+    sha256 = "sha256:1qs6h44x6bwvysa6343kdx6dflb2zxhp89ycgsx94mhfcvrc0iac";
   };
-  cargoSha256 = "sha256:07mvy5yd8q59ml6mvm1fn10d9dvhw5p1yv9l26z6yxdikfdz3dlm";
 }
