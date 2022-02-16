@@ -1,13 +1,6 @@
-{ system ? builtins.currentSystem }:
-
 let
-    pkgs = import <nixpkgs> { inherit system; };
+  # Import sources
+  personnel = import ./vim/default.nix;
 
-    callPackage = pkgs.lib.callPackageWith (pkgs // self);
-
-    self = {
-        vim = callPackage ./vim {};
-#        ogle = callPackage ./ogle.nix {};
-    };
-in
-self
+# And return that specific nixpkgs
+in personnel.nixpkgs
