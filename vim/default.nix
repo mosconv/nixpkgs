@@ -1,8 +1,8 @@
 { vim, fetchFromGitHub }:
 
 vim.mkDerivation {
-  name = "vim-${version}";
   version = "v8.2.1540";
+  name = "vim-${version}";
 
   src = fetchFromGitHub {
     owner = "mosconv";
